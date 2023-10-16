@@ -21,7 +21,9 @@ import DoughnutChart from './DoughnutChart.vue'
     }
 
     for (const interaction of interactions.value) {
-        summary[interaction.name] += 1
+        if (interaction.name in summary){
+            summary[interaction.name] += 1
+        }
     }
     return summary
   }
