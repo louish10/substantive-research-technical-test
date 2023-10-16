@@ -3,41 +3,32 @@ import DataDisplay from './components/DataDisplay.vue'
 </script>
 
 <template>
-  <header>
-    <h1>Substantive Research</h1>
-  </header>
+  <div class="content">
+    <header>
+      <h1 class="title">Substantive Research</h1>
+    </header>
 
-  <main>
-    <DataDisplay></DataDisplay>
-    <h1></h1>
-  </main>
+    <main>
+      <DataDisplay></DataDisplay>
+      <h1></h1>
+    </main>
+    </div>
 </template>
 
 <style scoped>
-header {
-  line-height: 1.5;
-}
 
-.logo {
-  display: block;
-  margin: 0 auto 2rem;
+.title {
+  text-align: center
+}
+.content{
+  max-width: 600px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 @media (min-width: 1024px) {
-  header {
-    display: flex;
-    place-items: center;
-    padding-right: calc(var(--section-gap) / 2);
-  }
 
-  .logo {
-    margin: 0 2rem 0 0;
-  }
-
-  header .wrapper {
-    display: flex;
-    place-items: flex-start;
-    flex-wrap: wrap;
-  }
 }
 </style>
