@@ -7,7 +7,7 @@
 <script lang="ts" setup>
   const props = defineProps(['summaryData'])
 
-import { Chart as ChartJS, ArcElement, Tooltip, Legend } from 'chart.js'
+import { Chart as ChartJS, ArcElement, Tooltip} from 'chart.js'
 import { Doughnut } from 'vue-chartjs'
 
 
@@ -16,7 +16,9 @@ function chartData() {
     labels: Object.keys(props.summaryData), 
     datasets: [
       {
-        backgroundColor: ['#41B883', '#E46651', '#00D8FF', '#DD1B16'],
+        backgroundColor: [
+          '#9e0142', '#d53e4f', '#f46d43', '#fdae61',
+        '#fee08b','#ffffbf','#e6f598','#abdda4','#66c2a5','#3288bd','#5e4fa2'],
         data: Object.values(props.summaryData) 
       }
     ]

@@ -44,7 +44,6 @@ fetch('https://substantive.pythonanywhere.com/')
   <div>
     <div v-if="loading">loading</div>
     <div v-else>
-      Loaded
       <DoughnutChart :summary-data="summariseData()"></DoughnutChart>
     </div>
     <div v-if="error">There was an error loading the data.</div>
