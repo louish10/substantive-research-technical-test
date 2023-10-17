@@ -18,8 +18,10 @@ import DataDisplay from './components/DataDisplay.vue'
 <style scoped>
 
 .title {
-  text-align: center
+  text-align: center;
+  margin: 20px 0 50px 0;
 }
+
 .content{
   max-width: 600px;
   margin: auto;

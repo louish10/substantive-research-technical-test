@@ -46,8 +46,18 @@ fetch('https://substantive.pythonanywhere.com/')
   <div>
     <div v-if="loading">loading</div>
     <div v-else>
+      <p class="description">
+        Here's a breakdown of your latest interactions. Hover over a segment to see which sector it belongs to.
+      </p>
       <DoughnutChart :summary-data="summariseData()"></DoughnutChart>
     </div>
     <div v-if="error">There was an error loading the data.</div>
   </div>
 </template>
+
+<style>
+  .description {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+</style>

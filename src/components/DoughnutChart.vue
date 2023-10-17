@@ -1,7 +1,5 @@
 <template>
-  <div class="chart-container">
-    <Doughnut :data="chartData()" :options="chartOptions()" />
-    </div>
+    <Doughnut class="chart" :data="chartData()" :options="chartOptions()" />
 </template>
 
 <script lang="ts" setup>
@@ -43,9 +41,8 @@ function chartOptions() {
   return {
     responsive: false,
     maintainAspectRatio: true,
-    layout: {
-      width: 900
-    }
+    height: 500,
+    width: 500,
   }
 }
 ChartJS.register(ArcElement, Tooltip)
@@ -53,7 +50,8 @@ ChartJS.register(ArcElement, Tooltip)
 </script>
 
 <style>
-.chart-container{
-  width: 600px
+.chart{
+  width: 600px;
+  height: 900px;
 }
 </style>
