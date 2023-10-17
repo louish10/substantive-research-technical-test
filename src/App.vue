@@ -15,22 +15,16 @@ import DataDisplay from './components/DataDisplay.vue'
     </div>
 </template>
 
-<style scoped>
+<style scoped lang="stylus">
 
-.title {
+.title
   text-align: center;
   margin: 20px 0 50px 0;
-}
 
-.content{
-  max-width: 600px;
-  margin: auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-@media (min-width: 1024px) {
-
-}
+.content
+  max-width 600px
+  margin auto
+  display flex
+  flex-direction column
+  align-items center
 </style>

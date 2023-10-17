@@ -55,9 +55,9 @@ fetch('https://substantive.pythonanywhere.com/')
   </div>
 </template>
 
-<style>
-  .description {
-    font-size: 16px;
-    margin-bottom: 20px;
-  }
+<style lang="stylus">
+.description 
+  font-size 18px
+  margin-bottom 30px
+
 </style>

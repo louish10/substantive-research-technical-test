@@ -25,7 +25,7 @@ function sortedSummaryData() {
 function chartData() {
   const [sortedSectorNames, sortedSectorCounts] = sortedSummaryData()
   return {
-    labels: Object.keys(props.summaryData), 
+    labels: sortedSectorNames, 
     datasets: [
       {
         backgroundColor: [
@@ -49,9 +49,8 @@ ChartJS.register(ArcElement, Tooltip)
 
 </script>
 
-<style>
-.chart{
-  width: 600px;
-  height: 900px;
-}
+<style lang="stylus">
+.chart
+  width 600px
+  height 600px
 </style>
